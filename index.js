@@ -18,7 +18,7 @@ const redisHost = config.get("redis").host;
 const redisPort = config.get("redis").port;
 console.log(redisHost, ":", redisPort);
 // 클러스터는 차후 개발
-io.adapter(redisAdapter({ host: redisHost, port: redisPort }));
+io.adapter(redisAdapter({ host: redisHost, port: redisPort, auth_pass: "!Simulgg" }));
 
 server.listen(port, () => {
     console.log('Server listening at port %d', port);

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node NODE_ENV=production index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "config": "^3.3.3",
